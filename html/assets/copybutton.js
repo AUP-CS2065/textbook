@@ -49,7 +49,7 @@ if (doc_url_root == '#') {
     doc_url_root = '';
 }
 
-const path_static = `${doc_url_root}_static/`;
+const pathassets = `${doc_url_root}assets/`;
 
 /**
  * Set up copy/paste for code blocks
@@ -89,8 +89,8 @@ const temporarilyChangeTooltip = (el, oldText, newText) => {
 // Changes the copy button icon for two seconds, then changes it back
 const temporarilyChangeIcon = (el) => {
   img = el.querySelector("img");
-  img.setAttribute('src', `${path_static}check-solid.svg`)
-  setTimeout(() => img.setAttribute('src', `${path_static}copy-button.svg`), 2000)
+  img.setAttribute('src', `${pathassets}check-solid.svg`)
+  setTimeout(() => img.setAttribute('src', `${pathassets}copy-button.svg`), 2000)
 }
 
 const addCopyButtonToCodeCells = () => {
@@ -109,7 +109,7 @@ const addCopyButtonToCodeCells = () => {
 
     const clipboardButton = id =>
     `<button class="copybtn o-tooltip--left" data-tooltip="${messages[locale]['copy']}" data-clipboard-target="#${id}">
-      <img src="${path_static}copy-button.svg" alt="${messages[locale]['copy_to_clipboard']}">
+      <img src="${pathassets}copy-button.svg" alt="${messages[locale]['copy_to_clipboard']}">
     </button>`
     codeCell.insertAdjacentHTML('afterend', clipboardButton(id))
   })
