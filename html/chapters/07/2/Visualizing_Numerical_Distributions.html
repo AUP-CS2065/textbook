@@ -1207,7 +1207,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Visualizing_Numerical_Distributions_16_0.png" src="../../../_images/Visualizing_Numerical_Distributions_16_0.png" />
+<img alt="../../../images/Visualizing_Numerical_Distributions_16_0.png" src="../../../images/Visualizing_Numerical_Distributions_16_0.png" />
 </div>
 </div>
 <p>This figure has two numerical axes. We will take a quick look at the horizontal axis first, and then examine the vertical axis carefully. For now, just note that <strong>the vertical axis does not represent percents</strong>.</p>
@@ -1225,7 +1225,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Visualizing_Numerical_Distributions_19_0.png" src="../../../_images/Visualizing_Numerical_Distributions_19_0.png" />
+<img alt="../../../images/Visualizing_Numerical_Distributions_19_0.png" src="../../../images/Visualizing_Numerical_Distributions_19_0.png" />
 </div>
 </div>
 <p>The horizontal axis of this figure is easier to read. For example, you can see exactly where 600 is, even though it is not labeled.</p>
@@ -1234,7 +1234,7 @@
 <div class="section" id="the-area-principle">
 <h2><span class="section-number">7.2.4. </span>The Area Principle<a class="headerlink" href="#the-area-principle" title="Permalink to this headline">¶</a></h2>
 <p>Both axes of a histogram are numerical, so you can do arithmetic on both of them. For example, you can multiply the values on either or both of the axes by a factor. To see how this could affect visual perception, let’s step back from histograms and look at a graphic provided for this purpose by the site <a class="reference external" href="https://flowingdata.com/2012/03/16/new-ipad-battery-size-is-huge/">Flowing Data</a>. It is a comparison between the battery sizes of two iPad models.</p>
-<p><img alt="iPad batteries" src="../../../_images/ipad_battery.png" /></p>
+<p><img alt="iPad batteries" src="../../../images/ipad_battery.png" /></p>
 <p>The larger of the batteries is supposed to be 70% bigger than the smaller. So it’s meant to be bigger but not quite twice as big. However, the larger battery in the picture looks almost four times the size of the smaller one.</p>
 <p>The reason for this problem is that the eye picks up <em>area</em> as the measure of size, not just height or just width. In the picture, both dimensions have been increased by 70%, leading to a multiplicative effect in the area.</p>
 <p>The area principle of visualization says that when we represent a magnitude by a figure that has two dimensions, such as a rectangle, then the <em>area</em> of the figure should represent the magnitude.</p>
@@ -1281,7 +1281,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Visualizing_Numerical_Distributions_24_0.png" src="../../../_images/Visualizing_Numerical_Distributions_24_0.png" />
+<img alt="../../../images/Visualizing_Numerical_Distributions_24_0.png" src="../../../images/Visualizing_Numerical_Distributions_24_0.png" />
 </div>
 </div>
 <p>Recall that the table <code class="docutils literal notranslate"><span class="pre">bin_counts</span></code> has the counts in all the bins of the histogram, specified by <code class="docutils literal notranslate"><span class="pre">bins=np.arange(300,</span> <span class="pre">2000,</span> <span class="pre">100)</span></code>. Also remember that there are 200 movies in all.</p>
@@ -1329,7 +1329,7 @@
 <h2><span class="section-number">7.2.7. </span>Why Not Simply Plot the Counts?<a class="headerlink" href="#why-not-simply-plot-the-counts" title="Permalink to this headline">¶</a></h2>
 <p>The main reason for plotting density on the vertical axis instead of counts or percents is to be able to compare histograms and approximate them with smooth curves where proportions are represented by areas under the curve.</p>
 <p>For example, later in the course you will see histograms that are approximately bell-shaped. The figure below shows such a shape. The gold shaded area happens to be 95% of the total area under the curve. Notice that this is quite believeable based on the areas you see in the figure, even though there are no numbers on the axes. That is why we draw histograms so that areas represent percents.</p>
-<p><img alt="shaded bell-shaped curve" src="../../../_images/normal_shaded.png" /></p>
+<p><img alt="shaded bell-shaped curve" src="../../../images/normal_shaded.png" /></p>
 <p>Drawing histograms on the density scale also allows us to compare histograms that are based on data sets of different sizes or have different choices of bins. In such cases, neither bin counts nor percents may be directly comparable. But if both histograms are drawn to the density scale then areas and densities are comparable.</p>
 <p>If a histogram has unequal bins, then plotting on the density scale is a requirement for interpretability. For some variables, unequal bins may be natural. For example, in the U.S. education system, elementary school consists of Grades 1-5, middle school is Grades 6-8, high school is Grades 9-12, and a Bachelor’s degree takes a further four years. Data on years of education might be binned using these intervals. In fact, no matter what the variable, bins don’t have to be equal. It is quite common to have one very wide bin towards the left end or right end of the data, where there are not many values.</p>
 <p>Let’s plot a histogram of adjusted gross receipts using unequal bins, and then see what happens if we plot counts instead.</p>
@@ -1341,7 +1341,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Visualizing_Numerical_Distributions_29_0.png" src="../../../_images/Visualizing_Numerical_Distributions_29_0.png" />
+<img alt="../../../images/Visualizing_Numerical_Distributions_29_0.png" src="../../../images/Visualizing_Numerical_Distributions_29_0.png" />
 </div>
 </div>
 <p>Notice that the [400, 500) bar has the same height (0.3% per million dollars) as in the histograms above.</p>
@@ -1387,7 +1387,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Visualizing_Numerical_Distributions_33_0.png" src="../../../_images/Visualizing_Numerical_Distributions_33_0.png" />
+<img alt="../../../images/Visualizing_Numerical_Distributions_33_0.png" src="../../../images/Visualizing_Numerical_Distributions_33_0.png" />
 </div>
 </div>
 <p>Even though <code class="docutils literal notranslate"><span class="pre">hist</span></code> has been used, <strong>the figure above is NOT A HISTOGRAM.</strong> It misleadingly exaggerates the movies grossing at least 500 million dollars. The height of each bar is simply plotted at the number of movies in the bin, without accounting for the difference in the widths of the bins. In this count-based figure, the shape of the distribution of movies is lost entirely.</p>
@@ -1403,7 +1403,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Visualizing_Numerical_Distributions_36_0.png" src="../../../_images/Visualizing_Numerical_Distributions_36_0.png" />
+<img alt="../../../images/Visualizing_Numerical_Distributions_36_0.png" src="../../../images/Visualizing_Numerical_Distributions_36_0.png" />
 </div>
 </div>
 <p>To see this, let us split the [400, 500) bin into 10 narrower bins, each of width 10 million dollars.</p>
@@ -1416,7 +1416,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Visualizing_Numerical_Distributions_38_0.png" src="../../../_images/Visualizing_Numerical_Distributions_38_0.png" />
+<img alt="../../../images/Visualizing_Numerical_Distributions_38_0.png" src="../../../images/Visualizing_Numerical_Distributions_38_0.png" />
 </div>
 </div>
 <p>Some of the skinny bars are taller than 0.3 and others are shorter. By putting a flat top at the level 0.3 across the whole bin, we are deciding to ignore the finer detail and are using the flat level as a rough approximation. Often, though not always, this is sufficient for understanding the general shape of the distribution.</p>
@@ -1437,7 +1437,7 @@ Look again at the [400, 500) bin in the earlier histograms. As we have seen, the
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Visualizing_Numerical_Distributions_41_0.png" src="../../../_images/Visualizing_Numerical_Distributions_41_0.png" />
+<img alt="../../../images/Visualizing_Numerical_Distributions_41_0.png" src="../../../images/Visualizing_Numerical_Distributions_41_0.png" />
 </div>
 </div>
 <p>We will start by getting the counts in the bins.</p>
@@ -1587,7 +1587,7 @@ Look again at the [400, 500) bin in the earlier histograms. As we have seen, the
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Visualizing_Numerical_Distributions_51_0.png" src="../../../_images/Visualizing_Numerical_Distributions_51_0.png" />
+<img alt="../../../images/Visualizing_Numerical_Distributions_51_0.png" src="../../../images/Visualizing_Numerical_Distributions_51_0.png" />
 </div>
 </div>
 </div>

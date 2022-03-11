@@ -889,7 +889,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Inference_for_the_True_Slope_5_0.png" src="../../../_images/Inference_for_the_True_Slope_5_0.png" />
+<img alt="../../../images/Inference_for_the_True_Slope_5_0.png" src="../../../images/Inference_for_the_True_Slope_5_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -927,7 +927,7 @@
 <p>Here is the original scatter diagram from the sample, and four replications of the bootstrap resampling procedure. Notice how the resampled scatter plots are in general a little more sparse than the original. That is because some of the original points do not get selected in the samples.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../../_images/Inference_for_the_True_Slope_11_0.png" src="../../../_images/Inference_for_the_True_Slope_11_0.png" />
+<img alt="../../../images/Inference_for_the_True_Slope_11_0.png" src="../../../images/Inference_for_the_True_Slope_11_0.png" />
 </div>
 </div>
 </div>
@@ -946,7 +946,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Inference_for_the_True_Slope_13_0.png" src="../../../_images/Inference_for_the_True_Slope_13_0.png" />
+<img alt="../../../images/Inference_for_the_True_Slope_13_0.png" src="../../../images/Inference_for_the_True_Slope_13_0.png" />
 </div>
 </div>
 <p>We can then construct an approximate 95% confidence interval for the slope of the true line, using the bootstrap percentile method. The confidence interval extends from the 2.5th percentile to the 97.5th percentile of the 5000 bootstrapped slopes.</p>
@@ -1012,7 +1012,7 @@ Approximate 95%-confidence interval for the true slope:
 0.380373502308 0.558711930778
 </pre></div>
 </div>
-<img alt="../../../_images/Inference_for_the_True_Slope_20_1.png" src="../../../_images/Inference_for_the_True_Slope_20_1.png" />
+<img alt="../../../images/Inference_for_the_True_Slope_20_1.png" src="../../../images/Inference_for_the_True_Slope_20_1.png" />
 </div>
 </div>
 <p>Now that we have a function that automates our process of estimating the slope of the true line in a regression model, we can use it on other variables as well.</p>
@@ -1025,7 +1025,7 @@ Approximate 95%-confidence interval for the true slope:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Inference_for_the_True_Slope_22_0.png" src="../../../_images/Inference_for_the_True_Slope_22_0.png" />
+<img alt="../../../images/Inference_for_the_True_Slope_22_0.png" src="../../../images/Inference_for_the_True_Slope_22_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1053,7 +1053,7 @@ Approximate 95%-confidence interval for the true slope:
 1.06617289982 1.91237018475
 </pre></div>
 </div>
-<img alt="../../../_images/Inference_for_the_True_Slope_25_1.png" src="../../../_images/Inference_for_the_True_Slope_25_1.png" />
+<img alt="../../../images/Inference_for_the_True_Slope_25_1.png" src="../../../images/Inference_for_the_True_Slope_25_1.png" />
 </div>
 </div>
 <p>A 95% confidence interval for the true slope extends from about 1 ounce per inch to about 1.9 ounces per inch.</p>
@@ -1071,7 +1071,7 @@ Approximate 95%-confidence interval for the true slope:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Inference_for_the_True_Slope_28_0.png" src="../../../_images/Inference_for_the_True_Slope_28_0.png" />
+<img alt="../../../images/Inference_for_the_True_Slope_28_0.png" src="../../../images/Inference_for_the_True_Slope_28_0.png" />
 </div>
 </div>
 <p>Run the simulation a few times, keeping the slope of the true line 0 each time. You will notice that while the slope of the true line is 0, the slope of the regression line is typically not 0. The regression line sometimes slopes upwards, and sometimes downwards, each time giving us a false impression that the two variables are correlated.</p>
@@ -1102,7 +1102,7 @@ Approximate 95%-confidence interval for the true slope:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Inference_for_the_True_Slope_34_0.png" src="../../../_images/Inference_for_the_True_Slope_34_0.png" />
+<img alt="../../../images/Inference_for_the_True_Slope_34_0.png" src="../../../images/Inference_for_the_True_Slope_34_0.png" />
 </div>
 </div>
 <p>We can use <code class="docutils literal notranslate"><span class="pre">bootstrap_slope</span></code> to estimate the slope of the true line. The calculation shows that an approximate 95% bootstrap confidence interval for the true slope has a negative left end point and a positive right end point – in other words, the interval contains 0.</p>
@@ -1118,7 +1118,7 @@ Approximate 95%-confidence interval for the true slope:
 -0.104436940365 0.276512953946
 </pre></div>
 </div>
-<img alt="../../../_images/Inference_for_the_True_Slope_36_1.png" src="../../../_images/Inference_for_the_True_Slope_36_1.png" />
+<img alt="../../../images/Inference_for_the_True_Slope_36_1.png" src="../../../images/Inference_for_the_True_Slope_36_1.png" />
 </div>
 </div>
 <p>Because the interval contains 0, we cannot reject the null hypothesis that the slope of the true linear relation between maternal age and baby’s birth weight is 0. Based on this analysis, it would be unwise to predict birth weight based on the regression model with maternal age as the predictor.</p>

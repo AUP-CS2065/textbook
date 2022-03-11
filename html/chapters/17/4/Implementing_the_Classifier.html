@@ -964,7 +964,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Implementing_the_Classifier_7_0.png" src="../../../_images/Implementing_the_Classifier_7_0.png" />
+<img alt="../../../images/Implementing_the_Classifier_7_0.png" src="../../../images/Implementing_the_Classifier_7_0.png" />
 </div>
 </div>
 <p>Pretty interesting!  Those two measurements do seem helpful for predicting whether the banknote is counterfeit or not.  However, in this example you can now see that there is some overlap between the blue cluster and the gold cluster.  This indicates that there will be some images where it’s hard to tell whether the banknote is legitimate based on just these two numbers.  Still, you could use a <span class="math notranslate nohighlight">\(k\)</span>-nearest neighbor classifier to predict the legitimacy of a banknote.</p>
@@ -977,7 +977,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Implementing_the_Classifier_9_0.png" src="../../../_images/Implementing_the_Classifier_9_0.png" />
+<img alt="../../../images/Implementing_the_Classifier_9_0.png" src="../../../images/Implementing_the_Classifier_9_0.png" />
 </div>
 </div>
 <p>There does seem to be a pattern, but it’s a pretty complex one.  Nonetheless, the <span class="math notranslate nohighlight">\(k\)</span>-nearest neighbors classifier can still be used and will effectively “discover” patterns out of this.  This illustrates how powerful machine learning can be: it can effectively take advantage of even patterns that we would not have anticipated, or that we would have thought to “program into” the computer.</p>
@@ -999,7 +999,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Implementing_the_Classifier_12_0.png" src="../../../_images/Implementing_the_Classifier_12_0.png" />
+<img alt="../../../images/Implementing_the_Classifier_12_0.png" src="../../../images/Implementing_the_Classifier_12_0.png" />
 </div>
 </div>
 <p>Awesome!  With just 2 attributes, there was some overlap between the two clusters (which means that the classifier was bound to make some mistakes for pointers in the overlap).  But when we use these 3 attributes, the two clusters have almost no overlap.  In other words, a classifier that uses these 3 attributes will be more accurate than one that only uses the 2 attributes.</p>
@@ -1148,7 +1148,7 @@ D = \sqrt{(x_0-x_1)^2 + (y_0-y_1)^2 + (z_0-z_1)^2}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Implementing_the_Classifier_27_0.png" src="../../../_images/Implementing_the_Classifier_27_0.png" />
+<img alt="../../../images/Implementing_the_Classifier_27_0.png" src="../../../images/Implementing_the_Classifier_27_0.png" />
 </div>
 </div>
 <p>The blue points (Class 1) are almost entirely separate from the gold ones. That is one indication of why the distance between two Class 1 wines would be smaller than the distance between wines of two different classes. We can see a similar phenomenon with a different pair of attributes too:</p>
@@ -1159,7 +1159,7 @@ D = \sqrt{(x_0-x_1)^2 + (y_0-y_1)^2 + (z_0-z_1)^2}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Implementing_the_Classifier_29_0.png" src="../../../_images/Implementing_the_Classifier_29_0.png" />
+<img alt="../../../images/Implementing_the_Classifier_29_0.png" src="../../../images/Implementing_the_Classifier_29_0.png" />
 </div>
 </div>
 <p>But for some pairs the picture is more murky.</p>
@@ -1170,7 +1170,7 @@ D = \sqrt{(x_0-x_1)^2 + (y_0-y_1)^2 + (z_0-z_1)^2}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/Implementing_the_Classifier_31_0.png" src="../../../_images/Implementing_the_Classifier_31_0.png" />
+<img alt="../../../images/Implementing_the_Classifier_31_0.png" src="../../../images/Implementing_the_Classifier_31_0.png" />
 </div>
 </div>
 <p>Let’s see if we can implement a classifier based on all of the attributes. After that, we’ll see how accurate it is.</p>
